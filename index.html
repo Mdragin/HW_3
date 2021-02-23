@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+
+<nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Random Password</a>
+</nav>
+
+<div>
+        <div class="container">
+
+                <div class="row">
+
+                        <div class="col-lg-8 col-sm-12 mx-auto">
+
+                                <div class="content">
+                                    <h3>Password Generator</h3>
+                                    <input type="text" id="display">
+                                    <button onclick="generate()">Generate</button>
+                                    <button onclick="copyPassword()">Copy to Clipboard</button>
+                                    <div id="length"></div>
+                                </div>
+
+                                <div class="previous_passwords">
+                                    <h4>Previously Generated Passwords</h4>
+                                    <div id="lastNums"></div>
+                                </div>
+
+                        </div>
+
+                </div>
+
+        </div>
+</div>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    A-Z
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    0-9
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    Capital and Lowercase Letters
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    Special Characters
+</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
